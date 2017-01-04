@@ -17,9 +17,10 @@ import java.io.OutputStream;
 
 class DBHelper extends SQLiteOpenHelper {
 
-    //http://stackoverflow.com/a/16354263/4754141
     //[bug_: there is issue creating your own database]
-    //[Solution_: better edit DB_CATEGORY.sqlite in assets folder, if you want multiple database to copy]
+    //[Solution1_: http://stackoverflow.com/a/29281714/4754141]
+    //[Prerequisite : android_metadata table required]
+    //[Solution2_: better edit DB_CATEGORY.sqlite in assets folder, if you want multiple database to copy]
 
     private static String DB_PATH = "";
     private static String DB_NAME = "DB_CATEGORY.sqlite";
