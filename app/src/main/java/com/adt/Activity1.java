@@ -36,7 +36,7 @@ public class Activity1 extends AppCompatActivity implements AdapterCategories.Ad
         //Data
         DBQuery db = new DBQuery(this);
         db.open();
-        adapter.setWeatherData(db.getCategories(0));
+        adapter.setCategory(db.getCategories(0));
         db.close();
     }
 

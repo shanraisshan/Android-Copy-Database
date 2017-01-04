@@ -30,11 +30,11 @@ public class AdapterCategories extends RecyclerView.Adapter<AdapterCategories.Fo
 
     //______________________________________________________________________________________________
     class ForecastAdapterViewHolder extends RecyclerView.ViewHolder implements OnClickListener {
-        final TextView mWeatherTextView;
+        final TextView tvCategory;
 
         ForecastAdapterViewHolder(View view) {
             super(view);
-            mWeatherTextView = (TextView) view.findViewById(android.R.id.text1);
+            tvCategory = (TextView) view.findViewById(android.R.id.text1);
             view.setOnClickListener(this);
         }
 
@@ -60,7 +60,7 @@ public class AdapterCategories extends RecyclerView.Adapter<AdapterCategories.Fo
     @Override
     public void onBindViewHolder(ForecastAdapterViewHolder forecastAdapterViewHolder, int position) {
         String categoryName = categories.get(position);
-        forecastAdapterViewHolder.mWeatherTextView.setText(categoryName);
+        forecastAdapterViewHolder.tvCategory.setText(categoryName);
     }
 
     @Override
@@ -70,7 +70,7 @@ public class AdapterCategories extends RecyclerView.Adapter<AdapterCategories.Fo
     }
 
     //______________________________________________________________________________________________
-    public void setWeatherData(ArrayList<String> _categories) {
+    public void setCategory(ArrayList<String> _categories) {
         categories = _categories;
         notifyDataSetChanged();
     }
