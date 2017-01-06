@@ -5,4 +5,7 @@
 
     <item type="id" name="recycler_view">false</item>
 
+    <!-- toolbar -->
+    <item type="id" name="toolbar_activity_1">false</item>
+
 </resources>

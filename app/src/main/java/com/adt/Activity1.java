@@ -22,7 +22,7 @@ public class Activity1 extends AppCompatActivity implements AdapterCategories.Ad
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_1);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_activity_1);
         setSupportActionBar(toolbar);
 
         //UI
