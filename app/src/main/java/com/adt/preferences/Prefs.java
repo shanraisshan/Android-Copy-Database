@@ -10,7 +10,6 @@ import com.adt.App;
  */
 
 public final class Prefs {
-	//saved in internal location : com.thesendapp/shared_prefs/com.thesendapp.xml
 	
     private static SharedPreferences get(final Context context) {
         return context.getSharedPreferences(App.package_name, Context.MODE_PRIVATE);
